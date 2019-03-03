@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
-    "normalize.css": "^8.0.1",
     "popper.js": "^1.14.7",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
@@ -17,7 +19,8 @@
     "react-router": "^3.2.0",
     "react-scripts": "2.1.5",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "source-map-explorer": "^1.7.0"
   },
   "scripts": {
     "start": "react-scripts start",

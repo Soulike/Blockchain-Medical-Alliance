@@ -1,8 +1,7 @@
 import 'react-app-polyfill/ie11';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'normalize.css';
-import 'bootstrap/scss/bootstrap.scss';
+import './ModuleConfig/Bootstrap';
 import {Provider} from 'react-redux';
 import Router from './Router';
 import Store from './Store';
