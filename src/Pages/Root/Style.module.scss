@@ -1,3 +1,23 @@
-.Root {
+@import "../../Constant/ROOT";
+@import "../../Constant/COLOR";
 
+.Root {
+    position: relative;
+    min-height: 100%;
+    background-color: $GRAY;
+
+    .headerWrapper {
+
+    }
+
+    .mainContent {
+        padding-bottom: $FOOTER_HEIGHT;
+        box-sizing: content-box;
+    }
+
+    .footerWrapper {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }

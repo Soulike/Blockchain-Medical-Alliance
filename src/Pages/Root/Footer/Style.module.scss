@@ -1,0 +1,25 @@
+@import "../../../Constant/COLOR";
+@import "../../../Constant/ROOT";
+
+.Footer {
+    height: $FOOTER_HEIGHT;
+    background-color: $BLACK;
+    color: $WHITE;
+    box-shadow: $SHADOW;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .infoWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 30rem;
+        font-size: (20rem/16);
+
+        .info {
+            line-height: (50rem/16);
+        }
+    }
+}
