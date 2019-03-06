@@ -1,0 +1,39 @@
+@import "../../ModuleConfig/Bootstrap/Bootstrap";
+@import "../../Constant/COLOR";
+
+.Banner {
+    height: (580rem/16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DDD;
+    /*TODO: Banner 背景图片*/
+
+    .sloganWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+        color: $BLUE;
+
+        .bigSlogan {
+            font-size: 4rem;
+        }
+
+        .smallSlogan {
+            font-size: 2.5rem;
+        }
+    }
+
+    .buttonWrapper {
+        position: absolute;
+        transform: translateY(12.5rem);
+
+        .addInsuranceButton {
+            font-size: 1.5rem;
+            padding: 1.5rem 6rem;
+            @extend .btn, .btn-primary, .btn-lg;
+        }
+    }
+}
