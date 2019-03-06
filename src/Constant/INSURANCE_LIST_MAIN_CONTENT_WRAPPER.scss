@@ -1,3 +1,9 @@
 .insuranceListMainContentWrapper {
     padding: (27rem/16) (70rem/16);
+
+    .insuranceListWrapper {
+        margin: (30rem/16) 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

@@ -15,7 +15,7 @@ class Card extends Component
                 {title ? <div className="card-header">{title}
                     <small className={Style.subTitle}>{subTitle}</small>
                 </div> : null}
-                <div className="card-body">
+                <div className="card-body" style={{padding: 0}}>
                     {children}
                 </div>
             </div>
