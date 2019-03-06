@@ -1,0 +1,21 @@
+.insuranceListMainContentWrapper {
+    padding: (27rem/16) (70rem/16);
+
+    .insuranceListWrapper {
+        margin: (30rem/16-45rem/16) (-45rem/16);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .insuranceWrapper {
+            margin: (46rem/16) (45rem/16);
+            width: (409rem/16); // Insurance 组件的宽度
+            box-sizing: content-box;
+
+            /*最后一行用于对齐的 Wrapper*/
+            &.empty {
+                margin: 0 (45rem/16);
+            }
+        }
+    }
+}

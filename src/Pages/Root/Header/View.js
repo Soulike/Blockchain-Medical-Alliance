@@ -31,8 +31,8 @@ class Header extends Component
                         hasLoggedIn
                             ? <Link onlyActiveOnIndex={false} className={Style.link} to={'#'}>个人中心</Link>
                             : [
-                                <Link onlyActiveOnIndex={false} className={Style.link} to={'#'}>注册</Link>, ' / ',
-                                <Link onlyActiveOnIndex={false} className={Style.link} to={'#'}>登录</Link>,
+                                <Link onlyActiveOnIndex={false} className={Style.link} to={'#'} key={'注册'}>注册</Link>, ' / ',
+                                <Link onlyActiveOnIndex={false} className={Style.link} to={'#'} key={'登录'}>登录</Link>,
                             ]
                     }
 
