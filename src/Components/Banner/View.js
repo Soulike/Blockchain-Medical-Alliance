@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Style from './Style.module.scss';
 import {ROUTER} from '../../Config';
 import {browserHistory} from 'react-router';
+import '../../StaticFile/banner.jpg';
 
 class Banner extends Component
 {
@@ -26,10 +27,10 @@ class Banner extends Component
         const {shouldShowAddInsuranceButton} = this.state;
         return (
             <div className={Style.Banner}>
-                <div className={Style.sloganWrapper}>
+                {/*<div className={Style.sloganWrapper}>
                     <div className={Style.bigSlogan}>因为专业 所以信赖</div>
                     <div className={Style.smallSlogan}>您的满意是我们存在的价值</div>
-                </div>
+                </div>*/}
                 {
                     shouldShowAddInsuranceButton
                         ? (
