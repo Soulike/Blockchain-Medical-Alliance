@@ -1,0 +1,64 @@
+@import "../../../Constant/COLOR";
+@import "../../../ModuleConfig/Bootstrap/Bootstrap";
+
+.InsurancePublication {
+    margin: (30rem/16) auto;
+    width: (1550rem/16);
+
+    .cardContentWrapper {
+        padding: (56rem/16) (83rem/16);
+
+        .title {
+            color: $BLUE;
+            font-size: (36rem/16);
+            border-bottom: (8rem/16) solid $BLUE;
+            height: (65rem/16);
+            line-height: 1em;
+            box-sizing: content-box;
+        }
+
+        .formWrapper {
+
+            .inputWrapper {
+                margin: (58rem/16) 0;
+                display: block;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                .label {
+                    font-size: (28rem/16);
+                    line-height: 1em;
+                    margin-bottom: (19rem/16);
+                }
+
+                input, textarea {
+                    @extend .form-control;
+                    font-size: (28rem/16);
+                    width: (400rem/16);
+                    height: (60rem/16);
+                    box-sizing: border-box;
+                }
+
+                .insuranceInformationTextArea {
+                    resize: none;
+                    width: (1361rem/16);
+                    height: (200rem/16);
+                }
+            }
+
+            .submitButtonWrapper {
+                text-align: center;
+                margin: (130rem/16) 0 (130rem/16)-(56rem/16) 0;
+
+                .submitButton {
+                    @extend .btn, .btn-primary, .btn-lg;
+                    font-size: (28rem/16);
+                    line-height: 1em;
+                    padding: (26rem/16) (172rem/16);
+                }
+            }
+        }
+    }
+}
