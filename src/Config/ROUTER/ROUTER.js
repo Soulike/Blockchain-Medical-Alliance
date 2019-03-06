@@ -8,6 +8,7 @@ import {
 // 页面 View 从此导入
 import {View as Login} from '../../Pages/Account/Login';
 import {View as SignUp} from '../../Pages/Account/SignUp';
+import {View as InsuranceCompanyInsuranceList} from '../../Pages/InsuranceCompany/InsuranceList';
 
 // 页面的 ID，目前设想用于识别当前所在页面。Value 必须从 0 开始且连续（考虑到以后可能的需求），值可以随意修改
 export const PAGE_ID = {
@@ -55,7 +56,7 @@ export const PAGE_ID_TO_ROUTE = {
 export const PAGE_ID_TO_COMPONENT = {
     [PAGE_ID.ACCOUNT.LOGIN]: Login,
     [PAGE_ID.ACCOUNT.SIGN_UP]: SignUp,
-    [PAGE_ID.INSURANCE_COMPANY.INSURANCE_COMPANY_INSURANCE_LIST]: null,
+    [PAGE_ID.INSURANCE_COMPANY.INSURANCE_COMPANY_INSURANCE_LIST]: InsuranceCompanyInsuranceList,
     [PAGE_ID.INSURANCE_COMPANY.INSURANCE_COMPANY_INSURANCE_PUBLICATION]: null,
     [PAGE_ID.INSURANCE_COMPANY.INSURANCE_COMPANY_DIRECT_PAYMENT_PROCESS]: null,
     [PAGE_ID.INSURANCE_COMPANY.INSURANCE_COMPANY_DIRECT_PAYMENT_DETAIL]: null,

@@ -1,0 +1,14 @@
+.spinnerWrapper {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+}
+
+
+.GrowingSpinner {
+    width: 10rem;
+    height: 10rem;
+}
