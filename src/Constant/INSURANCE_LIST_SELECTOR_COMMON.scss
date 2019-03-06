@@ -1,0 +1,37 @@
+@import "COLOR";
+
+.InsuranceListSelectorCommon {
+
+    .cardContent {
+        padding: (33rem/16) (86rem/16);
+    }
+
+    .selector {
+        font-size: (28rem/16);
+        line-height: 1em;
+        height: (80rem/16);
+
+        &:last-child {
+            height: 1em;
+        }
+
+        .label {
+            display: inline-block;
+            font-weight: bold;
+            width: (180rem/16);
+        }
+
+        .itemWrapper {
+            display: inline-block;
+
+            .item {
+                display: inline-block;
+                width: (132rem/16);
+
+                &.active {
+                    color: $BLUE;
+                }
+            }
+        }
+    }
+}

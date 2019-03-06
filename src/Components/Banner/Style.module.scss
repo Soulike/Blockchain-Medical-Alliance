@@ -6,8 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #DDD;
-    /*TODO: Banner 背景图片*/
+    background-size: contain;
+    background: url("../../StaticFile/banner.jpg") no-repeat center;
 
     .sloganWrapper {
         display: flex;
@@ -31,8 +31,9 @@
         transform: translateY(12.5rem);
 
         .addInsuranceButton {
-            font-size: 1.5rem;
-            padding: 1.5rem 6rem;
+            font-size: (28rem/16);
+            padding: (36rem/16) (90rem/16);
+            line-height: 1em;
             @extend .btn, .btn-primary, .btn-lg;
         }
     }
