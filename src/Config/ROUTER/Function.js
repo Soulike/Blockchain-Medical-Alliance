@@ -7,11 +7,11 @@ function prefixFunctionGenerator(prefix)
         if (url)
         {
             url = Function.removePrependSlashes(url);
-            return `/${prefix}/${url}`;
+            return `${prefix}/${url}`;
         }
         else
         {
-            return `/${prefix}`;
+            return `${prefix}`;
         }
     };
 }

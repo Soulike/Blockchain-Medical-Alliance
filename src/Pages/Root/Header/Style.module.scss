@@ -1,0 +1,52 @@
+@import "../../../Constant/COLOR";
+@import "../../../Constant/ROOT";
+
+.Header {
+    width: 100%;
+    height: 5rem;
+    background-color: $BLACK;
+    color: $WHITE;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    box-shadow: $SHADOW;
+
+    a {
+        color: $WHITE;
+        text-decoration: none;
+
+        &:hover {
+            color: $BLUE;
+        }
+    }
+
+    .logoWrapper {
+        width: 5*1.75rem;
+        text-align: center;
+
+        .logo {
+            font-size: 2.25rem;
+        }
+    }
+
+    .navWrapper {
+        width: 25.75rem;
+        display: flex;
+        justify-content: space-between;
+
+        .navItem {
+
+        }
+    }
+
+    .authControllerWrapper {
+        width: 5*1.75rem;
+        text-align: center;
+
+        .link {
+
+        }
+    }
+}
