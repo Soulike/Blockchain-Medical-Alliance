@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Style from './Style.module.scss';
 import {Link} from 'react-router';
+import ROUTER from '../../../Config/ROUTER';
 
 class Header extends Component
 {
@@ -16,6 +17,7 @@ class Header extends Component
     render()
     {
         const {hasLoggedIn} = this.state;
+        const {PAGE_ID, PAGE_ID_TO_ROUTE} = ROUTER;
         return (
             <div className={Style.Header}>
                 <div className={Style.logoWrapper}>
@@ -31,8 +33,14 @@ class Header extends Component
                         hasLoggedIn
                             ? <Link onlyActiveOnIndex={false} className={Style.link} to={'#'}>个人中心</Link>
                             : [
-                                <Link onlyActiveOnIndex={false} className={Style.link} to={'#'} key={'注册'}>注册</Link>, ' / ',
-                                <Link onlyActiveOnIndex={false} className={Style.link} to={'#'} key={'登录'}>登录</Link>,
+                                <Link onlyActiveOnIndex={false}
+                                      className={Style.link}
+                                      to={PAGE_ID_TO_ROUTE[PAGE_ID.ACCOUNT.SIGN_UP]}
+                                      key={'注册'}>注册</Link>, ' / ',
+                                <Link onlyActiveOnIndex={false}
+                                      className={Style.link}
+                                      to={PAGE_ID_TO_ROUTE[PAGE_ID.ACCOUNT.LOGIN]}
+                                      key={'登录'}>登录</Link>,
                             ]
                     }
 

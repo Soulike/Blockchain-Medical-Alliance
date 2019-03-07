@@ -18,10 +18,10 @@ class Checkbox extends Component
         const {className, label, id, onClick, ...rest} = this.props;
         const {stateId} = this.state;
         return (
-            <div className={`custom-control custom-checkbox ${Style.Checkbox}`} onClick={onClick}>
+            <div className={`${Style.Checkbox} ${className} custom-control custom-checkbox`} onClick={onClick}>
                 <input type={'checkbox'}
                        id={id ? id : stateId}
-                       className={`custom-control-input ${className}`}
+                       className={`custom-control-input`}
                        {...rest} />
                 <label className="custom-control-label" htmlFor={id ? id : stateId}>{label}</label>
             </div>

@@ -1,3 +1,139 @@
-.Login {
+@import "../../../Constant/COLOR";
+@import "../../../ModuleConfig/Bootstrap/Bootstrap";
 
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .background {
+        background: url("../../../StaticFile/accountBackground.jpg") center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .formWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: (200rem/16) 0;
+        width: (716rem/16);
+        height: (562rem/16);
+        overflow: hidden;
+        position: relative;
+
+        .frostedGlassBackground {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $WHITE;
+            opacity: 0.5;
+            filter: blur(0.5rem);
+            z-index: 0;
+        }
+
+        .loginForm {
+            width: (670rem/16);
+            height: (519rem/16);
+            box-sizing: border-box;
+            background-color: $WHITE;
+            padding: (36rem/16) (72rem/16);
+            z-index: 1;
+
+            .title {
+                font-size: (36rem/16);
+                text-align: center;
+                line-height: 1em;
+            }
+
+            .form {
+
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 3rem;
+
+                .inputWrapper {
+                    display: block;
+                    position: relative;
+                    color: #666;
+                    margin-top: 2rem;
+                    width: 100%;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    .icon {
+                        display: inline-block;
+                        font-size: (45rem/16);
+                        padding-left: (16rem/16);
+                        line-height: 1em;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    input {
+                        @extend .form-control;
+                        padding-left: (48rem/16+50rem/16);
+                        height: (68rem/16);
+                        font-size: (20rem/16);
+                        line-height: 1em;
+                        vertical-align: middle;
+                    }
+                }
+
+                .rememberPasswordAndSignUpTipWrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 2rem;
+                    font-size: (18rem/16);
+
+                    .rememberPasswordCheckboxWrapper {
+                        width: (24rem/16+4*18rem/16);
+                        display: flex;
+                        align-items: center;
+                        height: (24rem/16);
+                        margin-bottom: 0;
+
+                        .checkbox {
+                            width: (24rem/16);
+                            height: (24rem/16);
+                            box-sizing: border-box;
+                            display: inline-block;
+                        }
+
+                        .label {
+                            line-height: 1em;
+                            display: inline-block;
+                        }
+                    }
+
+                    .signUpTip {
+                        display: flex;
+                        align-items: center;
+                        height: (24rem/16);
+                    }
+                }
+
+                .submitButtonWrapper {
+                    margin-top: 2.5rem;
+                    width: 100%;
+
+                    .submitButton {
+                        @extend .btn, .btn-primary, .btn-lg;
+                        width: 100%;
+                        height: (73rem/16);
+                        font-size: (30rem/16);
+                    }
+                }
+            }
+        }
+    }
 }
